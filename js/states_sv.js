@@ -1476,7 +1476,7 @@ window.addEventListener('load', function() {
 function readurl(){
 	//URLの後ろの部分を取り出す
 	let currentURL = window.location.href;
-	if(currentURL.length !== 60){
+	if(currentURL.length !== 67){
 		return;
 	}
 	const targetElement = document.nForm.elements;
