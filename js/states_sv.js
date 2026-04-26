@@ -1361,7 +1361,7 @@ function getTweet() {
     // ツイート内容をセット
     var text = get_tyousei();
     text = encodeURIComponent(text);
-    var url = "https://pokecosmos.github.io/calc_stats_sv/";
+    var url = "https://pokecosmos.github.io/calc_stats_champions/";
     var additionalURL = "#"; // ここにURL末尾に追加したい文字列を設定
 	additionalURL += makeurl();
 	
@@ -1404,16 +1404,16 @@ function makeurl(){
 	}
 	
 	//ポケモンの個体値
-	for(i=0;i<6;i++){
-		num = targetElement[kn[i]].value;
-		if(num == ""){
-			num=0;
-		}if(!isNaN(num)){
-			num = parseInt(num, 10);
-		}
-		
-		output += num.toString(36);
-	}
+//	for(i=0;i<6;i++){
+//		num = targetElement[kn[i]].value;
+//		if(num == ""){
+//			num=0;
+//		}if(!isNaN(num)){
+//			num = parseInt(num, 10);
+//		}
+//		
+//		output += num.toString(36);
+//	}
 	
 	//ポケモンの性格値
 	num=0;
@@ -1510,12 +1510,12 @@ function readurl(){
 	
 	
 	//ポケモンの個体値
-	num = 1; // 文字数を指定
-	for(i=0; i<6;i++){
-		firstPart = text.substring(0, num);
-		text = text.substring(num);
-		targetElement[kn[i]].value = parseInt(firstPart, 36);
-	}
+//	num = 1; // 文字数を指定
+//	for(i=0; i<6;i++){
+//		firstPart = text.substring(0, num);
+//		text = text.substring(num);
+//		targetElement[kn[i]].value = parseInt(firstPart, 36);
+//	}
 	
 	//ポケモンの性格値
 	firstPart = parseInt(text, 36);
